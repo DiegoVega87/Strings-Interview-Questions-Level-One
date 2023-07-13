@@ -12,6 +12,9 @@ public class ReverseInput {
     *   arr = {'1', '2', '3', '4', '5'};
     *   output: [5, 4, 3, 2, 1]
     *
+    * Logic: Traverse the array up to the MIDDLE and swap elements from the ends to the center
     *
      * */
+
+
 }
