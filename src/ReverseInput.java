@@ -16,5 +16,17 @@ public class ReverseInput {
     *
      * */
 
+    public static void reverse(char[] arr){
+
+        if(arr.length < 2){
+            return;
+        }
+        int last = arr.length-1;
+        for(int i = 0; i < arr.length/2; i++){
+            char temp = arr[last-i];
+            arr[last-i] = arr[i];
+            arr[i] = temp;
+        }
+    }
 
 }
