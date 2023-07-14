@@ -7,6 +7,15 @@ public class StringSearch {
     * will take in two strings as parameters, s1 and s2. If s1 is found within s2, the function should return the
     * index of the first occurrence of the substring. Else return -1
     *
+    * Example 1:
+    *   String s1 = ""world"";
+    *   String s1 = ""world"";
+    *   Output: 6
+    *
+    * Example 2:
+    *   String s1 = ""java"";
+    *   String s2 = ""programming language"";
+    *   Output: -1
     *
     * */
 }
