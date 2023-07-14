@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class AnagramChecker {
 
     /*
@@ -16,5 +18,20 @@ public class AnagramChecker {
     *   String s1 = ""hello"";
     *   String s2 = ""world"";
     *   output should be false
-     * */
+    * */
+
+    public static void main(String[] args){
+        System.out.println(isAnagram("listen", "silent"));
+    }
+
+    public static boolean isAnagram(String s1, String s2) {
+
+        char[] str1 = s1.toCharArray();
+        char[] str2 = s2.toCharArray();
+
+        Arrays.sort(str1);
+        Arrays.sort(str2);
+
+        return  Arrays.equals(str2, str1);
+    }
 }
