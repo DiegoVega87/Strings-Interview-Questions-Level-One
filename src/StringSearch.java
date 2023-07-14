@@ -18,4 +18,9 @@ public class StringSearch {
     *   Output: -1
     *
     * */
+
+
+    public static int searchString(String s1, String s2){
+        return s2.indexOf(s1);
+    }
 }
