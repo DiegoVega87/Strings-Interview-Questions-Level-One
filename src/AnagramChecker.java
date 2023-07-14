@@ -7,6 +7,14 @@ public class AnagramChecker {
     * or phrase. The resulting word or phrase contains all the original letters exactly once. For example,
     * the word ""listen"" can be rearranged to form the word ""silent,"" making ""silent"" an anagram of ""listen.""
     *
+    * Example 1:
+    *   String s1 = ""listen"";
+    *   String s2 = ""silent"";
+    *   output should be true
     *
+    * Example 2:
+    *   String s1 = ""hello"";
+    *   String s2 = ""world"";
+    *   output should be false
      * */
 }
