@@ -7,6 +7,13 @@ public class PalindromeChecker {
      * ou should ignore all non-alphanumeric characters. A palindrome
      * is a word or phrase that reads the same forward and backward, e.g. level.
      *
+     * Example 1:
+     *  String s = ""A man, a plan, a canal: Panama"";
+     *  Output should be true
+     *
+     * Example 2:
+     *  String s = ""race a car"";
+     *  Output should be false
      *
      */
 
