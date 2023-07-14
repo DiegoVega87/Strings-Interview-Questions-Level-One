@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class NonRepeatingCharacter {
 
     /*
@@ -17,7 +19,28 @@ public class NonRepeatingCharacter {
     *
     * */
 
+    public static void main(String[] args){
+        String s = "aabbcicdde";
+        System.out.println(findFirstNonRepeatingChar(s));
+    }
+    public static int findFirstNonRepeatingChar(String s){
 
+        Stack<Character> seen = new Stack<>();
+        for(int index = 0; index < s.length(); index++){
+
+            char c = s.charAt(index); // get the character
+            //Check if the character is not present after the current character
+            if((s.indexOf(c, index+1) == -1)){
+                if(!seen.contains(c)){  // check if the character is absent in the stack.
+                    return index;
+                }
+            }else{
+                seen.push(c); // push the character if it's present after the current character.
+            }
+        }
+
+        return -1; // No non-repeating character found
+    }
 
 
 }
