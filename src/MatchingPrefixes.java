@@ -6,5 +6,13 @@ public class MatchingPrefixes {
     * Write a function that takes in an array of strings and returns the longest common prefix string.
     * If none is found return """"
     *
+    * Example 1:
+    *   String[] input = {""leetcode"", ""leet"", ""leeds"", ""leedscode""};
+    *   Output: lee
+    *
+    * Example 2:
+    *   String[] input = {""dog"", ""racecar"", ""car""};
+    *   Output: """"
+    *
     * */
 }
