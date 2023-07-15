@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class MatchingPrefixes {
 
     /*
@@ -15,4 +17,34 @@ public class MatchingPrefixes {
     *   Output: """"
     *
     * */
+    public static void main(String[] args){
+
+        String[] input = {"leetcode", "leet", "leeds","leedscode"};
+
+        System.out.println(longestCommonPrefix(input));
+    }
+
+    public static String longestCommonPrefix(String[] strs){
+
+        String prefix = "";
+        Map<String, Integer> prefixes = new LinkedHashMap<>();
+
+
+        for(int i = 0; i < strs.length; i++){
+            String word = strs[i];
+            for(int j = 1; j <= word.length(); j++){
+                String substring = word.substring(0, j);
+                int frequency = prefixes.getOrDefault(substring, 0);
+                prefixes.put(substring, frequency + 1);
+            }
+        }
+
+        for(String substring : prefixes.keySet()){
+            if(prefixes.get(substring) == strs.length){
+                prefix = substring;
+            }
+        }
+        return prefix;
+
+    }
 }
